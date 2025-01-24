@@ -12,21 +12,20 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&family=Roboto+Mono:wght@100..700&display=swap" rel="stylesheet">
 
-
     <link rel="preload" href="css/styles.css" as="style">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
     <header>
-        <h1 class="titulo">Ingeniería y Consultoría <span>Web</span></h1>
+        <h1 class="titulo">Ingeniería y Consultoría <span>WEB</span></h1>
     </header>
 
     <div class="nav-bg">
         <nav class="navegacion-principal contenedor">
             <a href="#">Inicio</a>
             <a href="nosotros.html">Nosotros</a>
-            <a href="clientes.html">Clientes</a>
+            <a href="servicios.html">Servicios</a>
             <a href="Contacto.html">Contacto</a>
         </nav>
     </div>
@@ -45,6 +44,90 @@
             <a class="boton" href="contacto.html">Contactame</a>
         </div>
     </section>
+
+    <main class="contenedor sombra">
+        <section class="nosotros sombra">
+            <div class="nosotros-grid">
+                <div class="texto-nosotros">
+                    <h2 class="titulo">Sobre Nosotros</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti consequuntur, sapiente ratione, consequatur, veniam illo fugit aliquid similique quibusdam sequi voluptate?</p>
+                </div>
+            </div>
+        </section>
+        <h2 class="titulo">Servicios</h2>
+        <div class="servicios">
+            <section class="servicio">
+                <h3>Diseño Web</h3>
+                <div class="iconos">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-wand" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ef7a06" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <polyline points="6 21 21 6 18 3 3 18 6 21" />
+                        <line x1="15" y1="6" x2="18" y2="9" />
+                        <path d="M9 3a2 2 0 0 0 2 2a2 2 0 0 0 -2 2a2 2 0 0 0 -2 -2a2 2 0 0 0 2 -2" />
+                        <path d="M19 13a2 2 0 0 0 2 2a2 2 0 0 0 -2 2a2 2 0 0 0 -2 -2a2 2 0 0 0 2 -2" />
+                    </svg>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur fugiat ad expedita ex quasi labore, et molestias a, odit quod, ipsa sapiente fugit doloremque deleniti quae rerum repellat nihil inventore.</p>
+            </section>
+            <section class="servicio">
+                <h3>Desarrollo Web</h3>
+                <div class="iconos">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-prompt" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ef7a06" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <polyline points="5 7 10 12 5 17" />
+                        <line x1="13" y1="17" x2="19" y2="17" />
+                    </svg>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur fugiat ad expedita ex quasi labore, et molestias a, odit quod, ipsa sapiente fugit doloremque deleniti quae rerum repellat nihil inventore.</p>
+            </section>
+            <section class="servicio">
+                <h3>Consultoría Web</h3>
+                <div class="iconos">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-help" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ef7a06" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <circle cx="12" cy="12" r="9" />
+                        <line x1="12" y1="17" x2="12" y2="17.01" />
+                        <path d="M12 13.5a1.5 1.5 0 0 1 1 -1.5a2.6 2.6 0 1 0 -3 -4" />
+                    </svg>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur fugiat ad expedita ex quasi labore, et molestias a, odit quod, ipsa sapiente fugit doloremque deleniti quae rerum repellat nihil inventore.</p>
+            </section>
+        </div>
+
+
+        <section>
+            <h2 class="titulo">Contacto</h2>
+            <form class="formulario">
+                <fieldset>
+                    <legend>Llena los campos para contactarme</legend>
+                    <div class="contenedor-campos">
+                        <div class="campo">
+                            <label>Nombre</label>
+                            <input type="text" class="input-text" placeholder="Nombre">
+                        </div>
+                        <div class="campo">
+                            <label>Teléfono</label>
+                            <input type="tel" class="input-text" placeholder="Teléfono">
+                        </div>
+                        <div class="campo">
+                            <label>Correo</label>
+                            <input type="email" class="input-text" placeholder="e-mail">
+                        </div>
+                        <div class="campo">
+                            <label>Mensaje</label>
+                            <textarea class="input-text"></textarea>
+                        </div>
+                    </div>
+                    <div class="alinear-derecha flex">
+                        <button class="boton w-sm-100" type="submit">Enviar</button>
+                    </div>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>Derechos Reservados &copy Mauro Miranda 2022.</p>
+    </footer>
 </body>
 
 </html>
