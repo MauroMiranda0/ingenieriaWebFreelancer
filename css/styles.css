@@ -211,42 +211,6 @@ legend {
 /* Fin Hero */
 
 
-/* Servicios */
-
-@media (min-width: 768px) {
-    .servicios {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        column-gap: 5rem;
-    }
-}
-
-.servicio {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.servicio h3 {
-    color: var(--secundario);
-}
-
-.servicio p {
-    text-align: center;
-    line-height: 1.5;
-}
-
-.servicio .iconos {
-    height: 10rem;
-    width: 10rem;
-    background-color: var(--secundario);
-    border-radius: 40%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-
 /* Nosotros */
 
 .nosotros {
@@ -288,13 +252,7 @@ legend {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    padding: 0 5rem;
-}
-
-@media (min-width: 768px) {
-    .texto-nosotros {
-        grid-column: 2 / 3;
-    }
+    padding: 0 4rem;
 }
 
 .texto-nosotros h2 {
@@ -303,7 +261,52 @@ legend {
 
 .texto-nosotros p {
     font-size: 1.4rem;
-    line-height: 1.3;
+    line-height: 1.5;
+}
+
+@media (min-width: 768px) {
+    .texto-nosotros {
+        grid-column: 2 / 3;
+    }
+    .texto-nosotros p {
+        font-size: 1.8rem;
+    }
+}
+
+
+/* Servicios */
+
+@media (min-width: 768px) {
+    .servicios {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 5rem;
+    }
+}
+
+.servicio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.servicio h3 {
+    color: var(--secundario);
+}
+
+.servicio p {
+    text-align: center;
+    line-height: 1.5;
+}
+
+.servicio .iconos {
+    height: 10rem;
+    width: 10rem;
+    background-color: var(--secundario);
+    border-radius: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
